@@ -121,6 +121,11 @@ nav button:hover {
   color: var(--secondary-color);
 }
 
+.hero img {
+  width: 50%;
+  height: 100%;
+}
+
 .checkout {
   height: 75vh;
   display: flex;
@@ -383,6 +388,7 @@ footer a::before {
   }
 
   .hero {
+    height: max-content;
     display: flex;
     flex-direction: column-reverse;
   }
@@ -404,6 +410,7 @@ footer a::before {
 
   .hero img {
     width: 100%;
+    height: auto;
   }
 
   .card-items {
