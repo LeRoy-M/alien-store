@@ -108,7 +108,7 @@ nav button:hover {
 }
 
 .hero p {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 .hero a {
@@ -385,19 +385,20 @@ footer a::before {
   .hero {
     display: flex;
     flex-direction: column-reverse;
-    /* height: max-content; */
   }
 
   .hero div {
+    height: max-content;
     width: 100%;
-    display: inline;
   }
 
   .hero h1 {
+    margin: 7px 0 5px 0;
     font-size: 2.5rem;
   }
 
   .hero p {
+    margin: 5px 0 10px 0;
     font-size: 1.5rem;
   }
 
