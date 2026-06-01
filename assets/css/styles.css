@@ -93,6 +93,34 @@ nav button:hover {
   justify-content: center;
 }
 
+.hero div {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  background-color: beige;
+  padding: 0 10px;
+  color: var(--secondary-color);
+}
+
+.hero h1 {
+  font-size: 100px;
+}
+
+.hero p {
+  font-size: 2rem;
+}
+
+.hero a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  padding-top: 10px;
+}
+
+.hero a:hover {
+  color: var(--secondary-color);
+}
+
 .checkout {
   height: 75vh;
   display: flex;
@@ -352,6 +380,29 @@ footer a::before {
     height: auto;
     display: block;
     margin: 8px auto;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    /* height: max-content; */
+  }
+
+  .hero div {
+    width: 100%;
+    display: inline;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+
+  .hero img {
+    width: 100%;
   }
 
   .card-items {
