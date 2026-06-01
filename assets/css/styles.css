@@ -138,13 +138,13 @@ nav button:hover {
   border: none;
   padding: 5px;
   cursor: pointer;
-  background-color: #666;
-  color: var(--accent-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .checkout .chk-btn:hover {
-  background-color: var(--primary-color);
-  color: #666;
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 .login {
@@ -154,10 +154,28 @@ nav button:hover {
   justify-content: center;
 }
 
+.login div {
+  background-color: aliceblue;
+  width: 500px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.login div button {
+  border: none;
+  font-family: inherit;
+  padding: 5px;
+  background-color: var(--primary-color);
+  color: aliceblue;
+  margin: 10px 0;
+}
+
 .login div button:hover {
   background-color: var(--primary-color);
   color: #666;
 }
+
+/* .login div button:click {} */
 
 .card-items {
   display: grid;
@@ -411,6 +429,10 @@ footer a::before {
   .hero img {
     width: 100%;
     height: auto;
+  }
+
+  .login div {
+    width: 80%;
   }
 
   .card-items {
