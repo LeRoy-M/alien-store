@@ -59,14 +59,14 @@
     </nav>
   </header>
   <main class="checkout">
-    <div style="display: flex; align-items: center; justify-content: center; background-image: url(assets/img/cart-empty.jpg); background-color: white; background-position: center; background-size: cover; background-repeat: no-repeat; opacity: 85%; width: 50%; height: 100%; padding: 20px; border-right: 1px solid #666; text-align: center;">
-      <h2>Cart Empty!<a href="shop.html" style="color: rgb(153, 224, 11); text-decoration: underline;"> Continue Shopping...</a></h2>
+    <div class="checkout-cart-img" style="background-image: url(assets/img/cart-empty.jpg)">
+      <h2>Cart Empty!<a href="shop.html"> Continue Shopping...</a></h2>
     </div>
-    <div style="width: 50%; height: 100%; padding: 20px;">
-      <div style="background-color: aliceblue; width: 90%; height: 50%; padding: 10px;">
-        <h3>Order Summary:</h3>
-        <p>Your cart is empty</p><hr>
-        <h4>Total: ₹0.00</h4>
+    <div class="checkout-summary">
+      <div class="checkout-summary-box">
+        <h3 style="background-color: var(--secondary-color); color: aliceblue; padding-left: 3px;">Order Summary:</h3>
+        <p style="padding: 7px 0 7px 5px;">Your cart is empty</p><hr>
+        <h4 style="padding: 5px 0;">Total: ₹0.00</h4>
         <button class="chk-btn">Checkout</button>
       </div>
     </div>

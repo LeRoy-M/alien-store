@@ -133,6 +133,37 @@ nav button:hover {
   justify-content: center;
 }
 
+.checkout-cart-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 85%;
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  border-right: 1px solid #666;
+  text-align: center;
+}
+
+.checkout-summary {
+   width: 50%;
+   height: 100%;
+   padding: 20px;
+}
+
+.checkout a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.checkout a:hover {
+  color: var(--secondary-color);
+}
+
 .checkout .chk-btn {
   font-family: inherit;
   border: none;
@@ -145,6 +176,13 @@ nav button:hover {
 .checkout .chk-btn:hover {
   background-color: var(--secondary-color);
   color: var(--accent-color);
+}
+
+.checkout-summary-box {
+  background-color: aliceblue;
+  width: 90%;
+  height: 50%;
+  padding: 10px;
 }
 
 .login {
@@ -166,13 +204,14 @@ nav button:hover {
   font-family: inherit;
   padding: 5px;
   background-color: var(--primary-color);
-  color: aliceblue;
+  color: var(--secondary-color);
   margin: 10px 0;
 }
 
 .login div button:hover {
-  background-color: var(--primary-color);
-  color: #666;
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  cursor: pointer;
 }
 
 /* .login div button:click {} */
@@ -450,6 +489,25 @@ footer a::before {
 
   .filter {
     display: none;
+  }
+
+  .checkout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .checkout-cart-img {
+    width: 100%;
+  }
+
+  .checkout-summary {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .checkout-summary-box {
+    width: 100%;
+    height: max-content;
   }
 
   footer {
