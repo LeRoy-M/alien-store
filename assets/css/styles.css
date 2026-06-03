@@ -49,7 +49,6 @@ nav {
 nav div {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 nav div ul {
@@ -358,64 +357,70 @@ footer a::before {
   /* .nav-mobile-view {
     justify-content: space-between;
   } */
-
-  /* Burger menu (...in progress)
-  .nav-mobile-menu-icon {
-    position: absolute;
-    top: 5em;
-    right: 5%;
-    margin-left: -2em;
-    margin-top: -45px;
-    width: 2em;
-    height: 45px;
-    z-index: 5;
-  }
-
-  .nav-mobile-menu-icon div {
-    position: relative;
-    width: 3em;
-    height: 7px;
-    border-radius: 3px;
-    background-color: #f8982b;
-    margin-top: 8px;
-    transition: all 0.3s ease-in-out;
-  }
-
-  Burger menu animation
-  #toggle-menu:checked + .nav-mobile-menu-icon .nav-top {
-    transform: rotate(-45deg);
-    margin-top: 25px;
-  }
-
-  #toggle-menu:checked + .nav-mobile-menu-icon .nav-bottom {
-    opacity: 0;
-    transform: rotate(45deg);
-  }
-
-  #toggle-menu:checked + .nav-mobile-menu-icon .nav-middle {
-    transform: rotate(45deg);
-    margin-top: -7px;
-  }
-
-  #toggle-menu:checked + .nav-mobile-menu-icon + .nav-links {
-    top: 0;
-    transform: scale(1);
-  } */
-
+ 
   .nav-mobile-menu-icon {
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--secondary-color);
     height: 50px;
     width: 50px;
-    z-index: 5px;
+    z-index: 7;
   }
 
-  .nav-mobile-menu-icon div {
-    background-color: aliceblue;
-    width: 30px;
-    height: 3px;
-    z-index: 10px;
+  /**  Burger Menu Styling  **/
+  .burger-menu {
+    position: absolute;
+    z-index: 7;
   }
+
+  .burger-menu div {
+    background-color: aliceblue;
+    width: 2em;
+    height: 5px;
+    margin: 7px 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-mobile-links-wrapper {
+    display: none;
+  }
+
+  /* .nav-mobile-links-wrapper {
+    position: fixed;
+    width: 100vh;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    padding: 0 0 0 3em;
+    right: -100%; left: 0; top: 0; bottom: 0;
+    z-index: 500;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-mobile-links-wrapper ul {
+    display: inline-block;
+    color: var(--primary-color);
+    font-size: 2rem;
+    gap: 3px;
+  } */
+
+  /**  Animations  **/
+  #toggle:checked + .burger-menu .menu-btn-top {
+    transform: rotate(-45deg);
+    margin-top: 18px;
+  }
+  #toggle:checked + .burger-menu .menu-btn-bottom {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+  #toggle:checked + .burger-menu .menu-btn-middle {
+    transform: rotate(45deg);
+    margin-top: -11px;
+  }
+
+  #toggle:checked + .burger-menu + .nav-mobile-links-wrapper {
+    right: 0;
+  } /** end-of-burger-menu-styling **/
 
   .nav-mobile-btns {
     display: flex;

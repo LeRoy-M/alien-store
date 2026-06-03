@@ -14,12 +14,28 @@
   <header>
     <nav class="nav nav-mobile-view">
 
-      <input type="checkbox" id="toggle-menu">
-      <label for="toggle-menu" class="nav-mobile-menu-icon">
-        <div class="nav-top"></div>
-        <div class="nav-middle"></div>
-        <div class="nav-bottom"></div>
-      </label>
+      <div class="nav-mobile-menu-icon">
+
+        <input style="display: none;" id="toggle" type="checkbox"></input>
+        <label for="toggle" class="burger-menu">
+          <div class="menu-btn-top"></div>
+          <div class="menu-btn-middle"></div>
+          <div class="menu-btn-bottom"></div>
+        </label>
+
+        <div class="nav-mobile-links-wrapper">
+          <ul>
+            <li><a href="shop.html">Clothes</a></li>
+            <li><a href="shop.html">Electronics</a></li>
+            <li><a href="shop.html">Appliances</a></li>
+            <li><a href="shop.html">Furniture</a></li>
+            <li><a href="shop.html">Toys</a></li>
+            <li><a href="shop.html">Books</a></li>
+            <li><a href="shop.html">Vehicles</a></li>
+          </ul>
+        </div>
+
+      </div>
 
       <div class="logo">
           <a href="index.html" style="display: flex;" title="Alien Store"><img src="assets/img/logo.png" alt="Logo Image" width="25" height="auto"><h2 style="text-transform: uppercase;">_Store</h2></a>
@@ -83,14 +99,6 @@
       <p><a href="shop.html">Vehicles</a></p>
     </div>
     <div>
-      <h4>More Info</h4>
-      <p><a href="#">About</a></p>
-      <p><a href="#">Store Locations</a></p>
-      <p><a href="#">Pickup Points</a></p>
-      <p><a href="#">Careers</a></p>
-      <p><a href="#">Developers</a></p>
-    </div>
-    <div>
       <h4>Contact Info</h4>
       <p><a href="mailto:someone@example.com">Email</a></p>
       <p><a href="tel:+911234567890">Phone</a></p>
@@ -107,12 +115,20 @@
       <p><a href="#">BYOB</a></p>
     </div>
     <div>
-      <h4>Terms & Conditions</h4>
+      <h4>Legal Matters</h4>
+      <p><a href="#">Terms & Conditions</a></p>
       <p><a href="#">Customer Policy</a></p>
       <p><a href="#">Return Policy</a></p>
       <p><a href="#">Shipping Policy</a></p>
       <p><a href="#">Tax Calculation</a></p>
-      <p><a href="#">Legal Processes</a></p>
+    </div>
+    <div>
+      <h4>More Info</h4>
+      <p><a href="#">About</a></p>
+      <p><a href="#">Store Locations</a></p>
+      <p><a href="#">Pickup Points</a></p>
+      <p><a href="#">Careers</a></p>
+      <p><a href="#">Developers</a></p>
     </div>
   </footer>
 </body>
