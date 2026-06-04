@@ -20,8 +20,9 @@ body {
   padding-top: 60px;
 }
 
-a {
+a, a:visited, a:hover {
   text-decoration: none;
+  color: inherit;
 }
 
 .nav-mobile-menu-icon, .nav-mobile-btns {
