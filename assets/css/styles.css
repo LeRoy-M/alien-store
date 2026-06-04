@@ -90,6 +90,7 @@ nav button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .hero div {
@@ -98,7 +99,6 @@ nav button:hover {
   display: grid;
   align-items: center;
   background-color: beige;
-  padding: 0 10px;
   color: var(--secondary-color);
 }
 
@@ -121,8 +121,27 @@ nav button:hover {
 }
 
 .hero img {
-  width: 50%;
+  width: 100%;
   height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.hero-text {
+  padding: 0 10px;
+}
+
+.hero-carousel {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  animation: hero-slideshow 15s infinite alternate;
+}
+
+.hero-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .checkout {
