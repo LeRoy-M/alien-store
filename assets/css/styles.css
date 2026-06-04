@@ -144,6 +144,22 @@ nav button:hover {
   object-fit: cover;
 }
 
+.product {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 20px;
+}
+
+.product-images {
+  width: 50%;
+}
+
+.product-info {
+  width: 40%;
+  padding: 5px 10px;
+  background-color: var(--accent-color);
+}
+
 .checkout {
   height: 75vh;
   display: flex;
@@ -182,7 +198,7 @@ nav button:hover {
   color: var(--secondary-color);
 }
 
-.checkout .chk-btn {
+.btn {
   font-family: inherit;
   border: none;
   padding: 5px;
@@ -191,7 +207,7 @@ nav button:hover {
   color: var(--secondary-color);
 }
 
-.checkout .chk-btn:hover {
+.btn:hover {
   background-color: var(--secondary-color);
   color: var(--accent-color);
 }
@@ -515,6 +531,27 @@ footer a::before {
     display: none;
   }
 
+  .product {
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .product-images {
+    width: 100%;
+  }
+
+  .product-info {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .product-info .btn {
+    width: 45%;
+    height: 40px;
+    margin: 0 5px;
+  }
+
   .checkout {
     display: flex;
     flex-direction: column;
@@ -526,7 +563,7 @@ footer a::before {
 
   .checkout-summary {
     width: 100%;
-    padding: 10px;
+    padding: 0;
   }
 
   .checkout-summary-box {
