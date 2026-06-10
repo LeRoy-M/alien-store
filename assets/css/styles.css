@@ -249,7 +249,35 @@ nav button:hover {
   cursor: pointer;
 }
 
+.login div input {
+  margin-bottom: 10px;
+}
+
 /* .login div button:click {} */
+
+.login p:hover {
+  color: var(--primary-color);
+}
+
+.login p:active {
+  color: #666;
+}
+
+#toggle-login {
+  display: none;
+}
+
+.signup {
+  display: none;
+}
+
+#toggle-login:checked ~ .signup {
+  display: block;
+}
+
+#toggle-login:checked ~ .signin {
+  display: none;
+}
 
 .card-items {
   display: grid;

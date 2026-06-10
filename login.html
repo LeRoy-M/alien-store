@@ -76,16 +76,35 @@
     </nav>
   </header>
   <main class="login">
-    <div>
-      <div style="width: 100%; background-color: rgb(4, 39, 69); color: aliceblue;"><h4>Sign in</h4></div>
+
+    <input type="checkbox" id="toggle-login" hidden>
+
+    <div class="signin">
+      <div style="width: 100%; background-color: rgb(4, 39, 69); color: aliceblue; margin-bottom: 10px;"><h4>Sign in</h4></div>
       <label for="user">Email</label><br>
       <input type="email" placeholder="someone@email.com" required><br>
       <label for="pass">Password</label><br>
       <input type="password" placeholder="******" required><br>
-      <button class="btn">LOGIN</button>
+      <button class="btn" title="Login">LOGIN</button>
       <p style="cursor: pointer;"><a href="#" title="Reset Password">Forgot Password?</a></p>
-      <p style="cursor: pointer;"><a href="#" title="Create account">Sign Up Instead</a></p>
+      <label for="toggle-login"><p style="cursor: pointer;" title="Create new account">Create Account Instead</p></label>
     </div>
+
+    <div class="signup">
+      <div style="width: 100%; background-color: rgb(4, 39, 69); color: aliceblue; margin-bottom: 10px;"><h4>Sign Up</h4></div>
+      <label for="user">Name</label><br>
+      <input type="text" placeholder="John Doe" required><br>
+      <label for="user">Email</label><br>
+      <input type="email" placeholder="someone@email.com" required><br>
+      <label for="pass">Password</label><br>
+      <input type="password" placeholder="******" required><br>
+      <label for="pass">Confirm Password</label><br>
+      <input type="password" placeholder="******" required><br>
+      <button class="btn" title="Create account">SIGN UP</button>
+      <p style="cursor: pointer;"><a href="#" title="Reset Password">Forgot Password?</a></p>
+      <label for="toggle-login"><p style="cursor: pointer;" title="Login">Login Instead</p></label>
+    </div>
+
   </main>
   <footer>
     <div>
